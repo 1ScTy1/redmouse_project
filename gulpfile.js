@@ -12,12 +12,12 @@ global.app = {
 
 // tasks here
 import clean from './gulp/tasks/clean.js';
-import pug from "./gulp/tasks/pug.js";
 import sass from "./gulp/tasks/sass.js";
 import js from "./gulp/tasks/js.js";
 import img from "./gulp/tasks/img.js";
 import fonts from "./gulp/tasks/fonts.js";
 import sprite from "./gulp/tasks/sprite.js";
+import html from "./gulp/tasks/html.js";
 
 const server = () => {
   browserSync.init({
@@ -28,7 +28,7 @@ const server = () => {
 }
 
 const watcher = (cb) => {
-  watch(path.pug.watch, pug);
+  watch(path.html.watch, html);
   watch(path.sass.watch, sass);
   watch(path.js.watch, js);
   watch(path.img.watch, img);
@@ -41,13 +41,12 @@ const watcher = (cb) => {
 
 const build = series(
   clean,
-  parallel(pug, sass, js, img, fonts, sprite)
+  parallel(sass, js, img, fonts, sprite, html)
 )
 
 const dev = series(build, parallel(watcher, server));
 
 task('img', img);
-task("pug", pug);
 task("sass", sass);
 task("fonts", fonts);
 task("sprite", sprite);
