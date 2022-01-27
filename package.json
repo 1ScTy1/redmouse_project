@@ -7,7 +7,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["gulp", "gulp starter"],
+  "keywords": [
+    "gulp",
+    "gulp starter"
+  ],
   "author": "Alex Som",
   "license": "ISC",
   "browserslist": [
@@ -32,6 +35,7 @@
     "gulp-cssimport": "^7.0.0",
     "gulp-file-include": "^2.3.0",
     "gulp-fonter": "^0.3.0",
+    "gulp-format-html": "^1.2.5",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^8.0.0",
     "gulp-newer": "^1.4.0",

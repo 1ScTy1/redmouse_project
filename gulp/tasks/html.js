@@ -4,6 +4,7 @@ import fileInclude from "gulp-file-include";
 import plumber from "gulp-plumber";
 import notify from "gulp-notify";
 import webpHtml from "gulp-webp-html-nosvg";
+import formatHTML from "gulp-format-html";
 
 const html = () => {
   return app.gulp
@@ -16,6 +17,7 @@ const html = () => {
         })),
       })
     )
+    .pipe(formatHTML())
     .pipe(fileInclude())
     .pipe(webpHtml())
     .pipe(app.gulp.dest(path.html.dest))
