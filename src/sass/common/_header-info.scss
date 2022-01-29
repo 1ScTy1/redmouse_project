@@ -1,0 +1,38 @@
+@import "../../../node_modules/swiper/swiper.scss";
+@import "../../../node_modules/swiper/modules/scrollbar/scrollbar.scss";
+
+.header-container{
+    display: flex;
+}
+.header-slider{
+    max-width: 500px;
+
+    &__title{
+        font-weight: bold;
+        font-size: 3.75rem;
+    }
+    &__text{
+        font-size: 1.125rem;
+        margin: 1.875rem 0 3.5rem;
+    }
+    &__btn{
+        border: none;
+        background: #4737FF;
+        color: white;
+        letter-spacing: 4px;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 1.0625rem 1.5625rem;
+    }
+}
+
+
+.header-video-wrap {
+    margin: 0 auto;
+    max-width: 600px;
+    }
+    #video {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    }
