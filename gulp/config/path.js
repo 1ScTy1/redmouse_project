@@ -34,7 +34,10 @@ export default {
   },
 
   img: {
-    src: [pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}", "!" + pathSrc + "/img/icons/**/*.*"],
+    src: [
+      pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
+      "!" + pathSrc + "/img/icons/**/*.*",
+    ],
     watch: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
     dest: pathDest + "/img",
   },
@@ -49,5 +52,18 @@ export default {
     src: pathSrc + "/img/icons/*.svg",
     watch: pathSrc + "/img/icons/*.svg",
     dest: pathDest + "/img",
+  },
+  files: {
+    src: [
+      pathSrc + "/video/*.mp4",
+      pathSrc + "/audio/*.mp3",
+      pathSrc + "/docs/*.{pdf,docx}",
+    ],
+    watch: [
+      pathSrc + "/video/*.mp4",
+      pathSrc + "/audio/*.mp3",
+      pathSrc + "/docs/*.{pdf,docx}",
+    ],
+    dest: pathDest,
   },
 };
