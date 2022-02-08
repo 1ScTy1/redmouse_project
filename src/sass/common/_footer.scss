@@ -1,0 +1,95 @@
+.footer{
+    background-color: #515151;
+    padding: 60px 0;
+
+    &__nav{
+        @include flex(center,center, $dir:column);
+        @include tablet{
+            @include flex(center,center, $dir:row);
+        }
+    }
+    &__input{
+        height: 2.5rem;
+    }
+    &__btn{
+        padding: 10px 16px;
+        font-weight: 500;
+        font-size: 0.875rem;
+        letter-spacing: 0.25rem;
+        border: none;
+        background-color: #C6B393;
+        color: white;
+    }
+    &__info{
+        margin-top: 20px;
+        @include flex(space-between,center);
+        border-top: 1px solid rgba(255, 255, 255, .5);
+        @include tablet{
+            padding: 2.1875rem 0;
+        }
+    }
+    &__links{
+        @include flex(center,center, $dir:column);
+        @include tablet{
+            @include flex(center,center, $dir:row);
+
+        }
+    }
+    &__link{
+        margin-bottom: 1.25rem;
+        font-weight: normal;
+        font-size: 1.125rem;
+        opacity: 0.4;
+        color: white;
+        text-decoration: none;
+        
+        @include tablet{
+            margin-right: 20px;
+        }
+    }
+    &__icons{
+        @include flex(center,center, $dir:column);
+        @include tablet{
+            @include flex(center,center, $dir:row);
+        }
+    }
+    &__icon{
+        margin-bottom: 20px;
+        @include tablet{
+            margin-right: 20px;
+        }
+    }
+}
+.logo{
+    width: 75px;
+    &__img{
+        width: 100%;
+    }
+    @include tablet{
+        margin-right: 10px;
+    }
+    @include laptop{
+        margin-right: 110px;
+    }
+}
+.nav{
+    @include flex(center, center, $dir:column);
+    margin: 1.875rem 0;
+
+    @include tablet{
+        @include flex(center, center, $dir:row);
+    }
+    &__link{
+        font-size: 1.125rem;
+        text-decoration: none;
+        color: white;
+        margin-top: 1.25rem;
+        @include tablet{
+            margin-right: 0.625rem;
+            margin-top: 0;
+        }
+        @include laptop{
+            margin-right: 3.75rem;
+        }
+    }
+}

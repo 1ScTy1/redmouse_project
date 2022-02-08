@@ -1,0 +1,69 @@
+.blog{
+    @include flex(center, center, $dir:column-reverse);  
+    @include laptop{
+        @include flex(space-between, center, $dir:row);
+        margin-top: 180px;
+    }
+
+    &__pic{
+        max-width: 20rem;
+        @include tablet{
+            max-width: 31.25rem;
+        }
+    }
+    &__img{
+        width: 100%;
+    }
+    &__info{
+        text-align: center;
+        padding: 1.875rem 0;
+        max-width: 20rem;
+
+        @include tablet{
+            max-width: 500px;
+        }
+
+        @include laptop{
+            @include flex(center,flex-start, $dir:column);
+            text-align: left;
+            padding: 0;
+        }
+    }
+    &__title{
+        font-weight: 600;
+        @include tablet{
+            font-size: 2.5rem;
+        }
+    }
+    &__text{
+        margin-bottom: 1.25rem;
+        @include tablet{
+            font-size: 1.125rem;
+        }
+    }
+    &__profile{
+        @include laptop{
+            @include flex(space-between, center);
+            margin-top: 2.5rem;
+            width: 285px;
+        }
+    }
+}
+
+.profile{
+    &__title{
+        @include tablet{
+            font-size: 1.375rem;
+            font-weight: 500;
+            color: #222222;
+        }
+    }
+    &__subtitle{
+        @include tablet{
+            font-size: 1.125rem;
+            font-weight: normal;
+            color:rgba(34, 34, 34, .8);
+        }
+    }
+
+}

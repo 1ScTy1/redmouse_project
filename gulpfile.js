@@ -43,7 +43,7 @@ const watcher = (cb) => {
 
 const build = series(
   clean,
-  parallel(pug, sass, js, img, fonts, sprite, files)
+  parallel(html, sass, js, img, fonts, sprite, files)
 )
 
 const dev = series(build, parallel(watcher, server));

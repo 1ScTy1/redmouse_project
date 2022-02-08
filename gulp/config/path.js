@@ -56,14 +56,10 @@ export default {
   files: {
     src: [
       pathSrc + "/video/*.mp4",
-      pathSrc + "/audio/*.mp3",
-      pathSrc + "/docs/*.{pdf,docx}",
     ],
     watch: [
       pathSrc + "/video/*.mp4",
-      pathSrc + "/audio/*.mp3",
-      pathSrc + "/docs/*.{pdf,docx}",
     ],
-    dest: pathDest,
+    dest: pathDest + "/video",
   },
 };

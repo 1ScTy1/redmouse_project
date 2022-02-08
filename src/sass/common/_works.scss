@@ -1,0 +1,76 @@
+.works{
+    text-align: center;
+    margin-top: 1.875rem;
+    @include laptop{
+        text-align: left;
+        margin: 12.5rem 0;
+
+    }
+    &__info{
+        @include laptop{
+            @include flex(space-between, center)
+        }
+    }
+    &__subtitle{
+        font-weight: 500;
+        font-size: 0.875rem;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: -0.0625rem;
+        color: black;
+        margin-bottom: 1.25rem;
+    }
+    &__btn{
+        border: none;
+        background: none;
+        font-weight: 600;
+        font-size: 0.875rem;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+        opacity: .3;
+        cursor: pointer;
+    }
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 300px);
+        gap: 30px;
+        
+        @include tablet{
+            margin: 50px 0 0 50px;
+        }
+    }
+    &__item{
+        transition: .5s;
+        &:hover{
+            transform: translateY(-30px);
+        }
+    }
+    &__img{
+        width: 100%;
+    }
+    &__text-info{
+        @include laptop {
+            @include flex(space-between, center)
+        }
+    }
+    &__text{
+        max-width: 740px;
+        font-size: 1.125rem;
+        margin: 20px 0;
+    }
+    &__button{
+        font-weight: 500;
+        font-size: 0.875rem;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+        color: white;
+        padding: 17px 20px;
+        border: none;
+        background-color: #4737FF;
+        cursor: pointer;
+    }  
+}

@@ -5,8 +5,21 @@
 @import "blocks/default";
 
 @import "blocks/fonts";
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/scrollbar/scrollbar.scss";
+@import "../../node_modules/swiper/modules/navigation/navigation.scss";
+
 
 @import "./common/header";
 @import "./common/header-info";
+@import "./common/blog";
+@import "./common/main-slider";
+@import "./common/service";
+@import "./common/works";
+@import "./common/slider-info";
+@import "./common/clients";
+@import "./common/footer";
+
+
 
 

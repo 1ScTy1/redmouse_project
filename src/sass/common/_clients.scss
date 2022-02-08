@@ -1,0 +1,46 @@
+.clients{
+    margin-top: 30px;
+    background: white;
+    @include laptop{
+        padding: 6.25rem 0;
+    }
+
+    &__info{
+        @include laptop{
+            @include flex(space-between, center)
+        }
+    }
+    &__text-info{
+        @include laptop{
+            width: 440px;
+        }
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 2.5rem;
+        letter-spacing: -0.0625rem;
+        color: black;
+    }
+    &__subtitle{
+        font-weight: 500;
+        font-size: 0.875rem;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+        color: #000;
+        margin: 0.625rem 0;
+    }
+    &__text{
+        font-size: 1.125rem;
+    }
+    &__brands{
+        @include flex(space-between, center, $dir:column);
+        @include laptop{
+            @include flex(space-between, center, $dir:row);
+            margin-top: 5rem;
+            
+        }
+    }
+    &__img{
+        margin-top: 20px;
+    }
+}

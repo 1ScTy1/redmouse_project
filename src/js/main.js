@@ -1,9 +1,6 @@
-import Swiper, {Scrollbar} from 'swiper'
+import './module/video.js'
+import './module/slider.js'
+import './module/works.js'
 
-new Swiper ('.header-slider', {
-    loop: true,
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-    },
-})
+
+
